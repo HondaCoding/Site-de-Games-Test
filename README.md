@@ -1,2 +1,2 @@
 # Site de Games Test
- Site criado para estudo e desenvolvimento das minhas habilidades
+ Repositório destinado a estudo e treino.
