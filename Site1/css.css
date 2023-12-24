@@ -30,7 +30,7 @@ header nav .botao {
    margin-left: 30px;
 }
 
-/*------------CONTAINER IMG FUNDO + BOTAO VIDEO----------*/
+/*------------CONTAINER FUNDO + BOTAO PLAYER------------*/
 .container-fundo {
    width: 100%;
    height: 800px;
@@ -38,13 +38,18 @@ header nav .botao {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   display: flex; /*flexbox usado para centralizar o videoButton na imagem*/
-   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
    justify-content: center;
 }
-.container-fundo .videoButton img {
+.container-fundo .container-player {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.container-fundo .container-player .img-button {
    width: 190px;
-   margin-top: -130px;
 }
 
 /*--------------CONTAINER-DEGRADÊ------------------------*/
@@ -52,27 +57,24 @@ header nav .botao {
    background-color: rgb(0, 0, 0,.8);
    width: 100%;
    height: 130px;
-   margin-top: -130px;
-   z-index: 2;
+   display: flex;
+   justify-content: center;
 }
 .degrade {
    position: absolute;
    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
    width: 100%;
    height: 130px;
-   z-index: 3;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   z-index: 2;
 }
 
-/*-----------ICONES APP & PLATAFORMAS DO DEGRADÊ---------*/
-.degrade .icones {
+/*----------CONTAINER-ICONES APP & PLATAFORMAS---------*/
+.container-icones {
    width: 60%;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-   padding-right: 2%;
+   z-index: 3;
 }
 .icone {
    width: 130px;
@@ -84,8 +86,8 @@ header nav .botao {
    width: 50px;
 }
 
-/*-----------------------MIDIAS---------------------------*/
-.midias{
+/*-----------------CONTAINER MIDIAS---------------------*/
+.container-midias{
    width: 100%;
    height: 800px;
    background-color: rgb(97, 96, 96);
