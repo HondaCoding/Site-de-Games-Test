@@ -4,11 +4,12 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <title>RF Online</title>
 </head>
 <body>
    <header>   
-      <img src="imagens/rf_logo.png" alt="Logotipo">
+      <img class="logo-rf" src="imagens/rf_logo.png" alt="Logotipo">
       <nav>
          <a class="botao" href="">HOME</a>
          <a class="botao" href="">MEDIA</a>
@@ -19,26 +20,215 @@
       </nav>   
    </header>
 
-   <div class="container-fundo">
-      <div class="container-player">
-         <a><img class="img-button" src="imagens/videobutton.png"></a>
+   <main>
+      <div class="container-fundo">
+         <div class="container-player">
+            <a><img class="img-button" src="imagens/videobutton.png"></a>
+         </div>
+         <div class="container-degrade">
+            <div class="degrade"></div>
+            <section class="container-icones">
+               <a href=""><img class="icone appleStore" src="imagens/icones/icon_applestore.png" alt=""></a>
+               <a href=""><img class="icone playStore" src="imagens/icones/icon_playstore.png" alt=""></a>
+               <a href=""><img class="icone epicGames" src="imagens/icones/icon_epicgames.png" alt=""></a>
+               <a href=""><img class="icone steam" src="imagens/icones/icon_steam.png" alt=""></a>
+               <a href=""><img class="icone linux" src="imagens/icones/icon_linux.png" alt=""></a>
+               <a href=""><img class="icone windows" src="imagens/icones/icon_windows.png" alt=""></a>
+            </section>
+         </div>
       </div>
-      <div class="container-degrade">
-         <div class="degrade"></div>
-         <section class="container-icones">
-            <a href=""><img class="icone appleStore" src="imagens/icones/icon_applestore.png" alt=""></a>
-            <a href=""><img class="icone epicGames" src="imagens/icones/icon_epicgames.png" alt=""></a>
-            <a href=""><img class="icone linux" src="imagens/icones/icon_linux.png" alt=""></a>
-            <a href=""><img class="icone playStore" src="imagens/icones/icon_playstore.png" alt=""></a>
-            <a href=""><img class="icone steam" src="imagens/icones/icon_steam.png" alt=""></a>
-            <a href=""><img class="icone windows" src="imagens/icones/icon_windows.png" alt=""></a>
-         </section>
-      </div>
-   </div>
-
-   <div class="container-midias">
-
-   </div>
    
+      <div class="container-midias">
+         <video autoplay muted loop id="myVideo">
+            <source src="imagens/dark-fantasy-tree.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+         <div class="imagens-midias">
+            <div class="bloco img1">
+               <aside class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus molestias sunt, ratione ipsam nemo blanditiis reprehenderit eveniet natus perspiciatis facilis vel rem laboriosam animi in, explicabo amet repellat nam accusamus?</aside>
+            </div>
+            <div class="bloco img2">
+               <aside class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus molestias sunt, ratione ipsam nemo blanditiis reprehenderit eveniet natus perspiciatis facilis vel rem laboriosam animi in, explicabo amet repellat nam accusamus?</aside>
+            </div>
+   
+            <div class="bloco img3">
+               <aside class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus molestias sunt, ratione ipsam nemo blanditiis reprehenderit eveniet natus perspiciatis facilis vel rem laboriosam animi in, explicabo amet repellat nam accusamus?</aside>
+            </div>
+            <div class="bloco img4">
+               <aside class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus molestias sunt, ratione ipsam nemo blanditiis reprehenderit eveniet natus perspiciatis facilis vel rem laboriosam animi in, explicabo amet repellat nam accusamus?</aside>
+            </div>
+         </div>
+         <div class="degrade gambiarra"></div>
+      </div>
+   
+      <div class="container-features">
+         <div class="degrade-invertido"></div>
+         <div class="posicionamento">
+            <section class="texts-features">
+               <h1 class="title1">A New way to live your adventure!</h1>
+               <div class="text1">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus esse deleniti neque architecto. Nostrum dolor ea placeat quia blanditiis! Earum veniam voluptatibus nobis voluptate a vitae labore necessitatibus molestiae porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, corporis error in culpa ducimus porro sapiente nostrum saepe nulla ea autem rem deleniti mollitia optio architecto voluptates fugit. Commodi quibusdam eaque et quos! Nemo officiis harum a reiciendis fugiat tempora voluptatibus, facilis iusto fuga odit reprehenderit possimus minima quos obcaecati...</p>
+               </div>
+               <div class="botao-read-more">
+                  <a href=""><p>Read more</p></a>
+               </div>
+            </section>
+         </div>
+         <div class="degrade gambiarra"></div>
+      </div>
+
+      <div class="container-download">
+         <div class="degrade-invertido absolute"></div>
+
+         <div class="box-conteudo-download">
+            <div class="box-esquerda">
+               <img src="imagens/download/rpg_fem_mage.png" alt="">
+            </div>
+
+            <div class="box-direita">
+               <div class="box-requirements">               
+                  <div class="box-requisitos">
+                     <ul>
+                        <li class="t1">MINIMUM</li>
+                        <br>
+                        <ul>
+                           <li>Requires a 64-bit processor and operating system</li>
+                           <br>
+                           <br>
+                           <li><span class="item">Processor:</span> Intel® Core™ i5-10500 @ 3.10GHz / AMD Ryzen 3 3300X</li>
+                           <li><span class="item">Memory:</span> 8 GB RAM</li>
+                           <li><span class="item">Graphics:</span> NVIDIA® GeForce® GTX 1060 3GB / AMD Radeon RX 590</li>
+                           <li><span class="item">DirectX:</span> Version 11</li>
+                           <li><span class="item">Storage:</span> 100 GB available space</li>
+                        </ul>
+                     </ul>  
+                  </div>
+
+                  <div class="divisao-meio">
+                     <div class="divisao-meio-esquerda"></div>
+                     <div class="divisao-meio-direita"></div>
+                  </div>
+
+                  <div class="box-requisitos">
+                     <ul>
+                        <li class="t2">RECOMMENDED</li>
+                        <br>
+                        <ul>
+                           <li>Requires a 64-bit processor and operating system</li>
+                           <br>
+                           <br>
+                           <li><span class="item">Processor:</span> Intel® Core™ i7-10700K @ 3.80GHz / AMD Ryzen 5 3600X
+                           </li>
+                           <li><span class="item">Memory:</span> 16 GB RAM</li>
+                           <li><span class="item">Graphics:</span> NVIDIA® GeForce® RTX 2060 / AMD Radeon RX 6600</li>
+                           <li><span class="item">DirectX:</span> Version 12</li>
+                           <li><span class="item">Storage:</span> 100 GB available space</li>
+                        </ul>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="box-download">
+                  <section class="box-text">
+                     <p>DOWNLOAD ON STEAM</p>
+                  </section>
+                  <div class="divisao-meio">
+                     <div class="divisao-meio-esquerda"></div>
+                     <div class="divisao-meio-direita"></div>
+                  </div>
+                  <div class="box-imagem">
+                     <img class="img-download-pc" src="imagens/icones/icon_steam.png" alt="">
+                  </div>
+               </div>
+
+               <div class="box-download">
+                  <section class="box-text">
+                     <p>DOWNLOAD ON EPIC GAMES</p>
+                  </section>
+                  <div class="divisao-meio">
+                     <div class="divisao-meio-esquerda"></div>
+                     <div class="divisao-meio-direita"></div>
+                  </div>
+                  <div class="box-imagem">
+                     <img class="img-download-pc" src="imagens/icones/icon_epicgames.png" alt="">
+                  </div>
+               </div>
+
+               
+            </div>
+         </div>
+
+         <div class="degrade gambiarra"></div>
+      </div>
+
+      <div class="container-register">
+         <div class="degrade-invertido absolute"></div>
+         <div class="box-register-login">
+            <div class="box-register-left">
+               <div class="register-login-title">LOG IN</div>
+
+               <form class="box-login">
+                  <div class="login">
+                     <input class="input-text" type="text" placeholder="Username">
+                     <i class='bx bxs-user'></i>
+                  </div>
+                  <div class="passwd">
+                     <input class="input-text" type="text" placeholder="Password">
+                     <i class='bx bxs-lock-alt ico-passwd'></i>
+                     <div class="checkbox">
+                        <br>
+                        <input type="checkbox" id="remember-passwd">
+                        <label>Forgot the password? </label>
+                     </div>
+                  </div>
+                  <button class="btn-sign-in" type="submit">SIGN IN</button>
+               </form>
+
+            </div>
+
+            <div class="divisao-meio">
+               <div class="divisao-meio-esquerda"></div>
+               <div class="divisao-meio-direita"></div>
+            </div>
+
+            <div class="box-register-right">
+               <div class="register-login-title">SIGN UP</div>
+
+               <div class="login2">
+                  <input class="input-text" type="text" placeholder="Username">
+                  <i class='bx bxs-user'></i>
+               </div>
+               <div class="passwd2">
+                  <input class="input-text" type="text" placeholder="Password">
+                  <i class='bx bxs-lock-alt ico-passwd'></i>
+               </div>
+               <div class="passwd2">
+                  <input class="input-text" type="text" placeholder="Confirm password">
+                  <i class='bx bxs-lock-alt ico-passwd'></i>
+               </div>
+               <div class="email2">
+                  <input class="input-text" type="text" placeholder="Email">
+                  <i class='bx bxs-envelope'></i>
+               </div>
+
+               <button class="btn-sign-up" type="submit">SIGN UP</button>
+            </div>
+         </div>
+         <div class="degrade gambiarra absolute"></div>
+      </div>
+   </main>
+
+   <footer>
+      <div class="posicao-footer">
+         <img class="logo-rf" src="imagens/rf_logo.png" alt="">
+         <div class="links-avisos">
+            <a href="" class="aviso1">LEGAL</a>
+            <a href="" class="aviso2">PRIVACY NOTICE</a>
+            <a href="" class="aviso3">COOKIE PREFERENCES</a>
+            <a href="" class="aviso4">YOUR PRIVACY OPTIONS</a>
+         </div>
+         <p class="copyright">Published by Xisde Games under license. ©2023 Hondachi Corporation. All rights reserved. Odit adipisci repellendus veritatis. Aperiam consectetur, tempore illum deleniti ipsam nulla iusto, corrupti a ducimus voluptates repellendus nobis nesciunt at nostrum molestias. Nulla, unde doloremque corrupti aliquid maiores quam tempore voluptatibus illum harum! Rem voluptates cupiditate distinctio facere voluptas.</p>
+      </div>    
+   </footer>
 </body>
 </html>
